@@ -10,7 +10,6 @@
 HTML 指的是<span style="color:red">超文本标记语言 (Hyper Text Markup Language) </span>，它是用来描述网页的一种语言
 HTML 不是一种编程语言，而是一种标记语言 (markup language)
 标记语言是一套标记标签 (markup tag)
-<span style="color:red"></span>
 <span style="color:red">超文本有 2 层含义：</span>
 
 1. 它可以加入图片、声音、动画、多媒体等内容（超越了文本限制 ）
@@ -51,7 +50,9 @@ HTML 不是一种编程语言，而是一种标记语言 (markup language)
 
 ### 1. 图像标签
 
->  `<img src="图像URL" />`
+```html
+<img src="图像URL" />
+```
 
 src 是`<img>`标签的必须属性，它用于指定图像文件的路径和文件名
 
@@ -71,7 +72,9 @@ src 引入的相对路径和绝对路径要区分：
 
 ### 2. 超链接标签
 
-> `<a href="跳转目标" target="目标窗口的弹出方式"> 文本或图像 </a>`
+```html
+<a href="跳转目标" target="目标窗口的弹出方式"> 文本或图像 </a>
+```
 
 两个属性作用如下：
 
@@ -88,15 +91,160 @@ src 引入的相对路径和绝对路径要区分：
    - 在链接文本的 href 属性中，设置属性值为<span style="color:red"> #名字 </span>的形式，如`<a href="#two"> 第2集 </a>`
    - 找到目标位置标签，里面添加一个 id 属性 = 刚才的名字 ，如`<h3 id="two"> 第2集 </h3>`
 
+### 3. 表格标签
+```html
+<table>
+ <tr>
+     <th>单元格内的文字</th>
+ 	 <td>单元格内的文字</td>
+ ...
+ </tr>
+ ...
+</table>
+```
+
+1. `<table> </table>` 是用于定义表格的标签
+2. `<tr> </tr>` 标签用于定义表格中的行，必须嵌套在 `<table> </table>`标签中
+3. `<th> </th>`标签表示 HTML 表格的表头部分(table head 的缩写)，表头单元格内的文字会加粗居中显示
+4. `<td> </td>` 用于定义表格中的单元格(table data 的缩写)，必须嵌套在`<tr></tr>`标签中
+
+表格属性（不常用）如下：
+
+![image-20211211204449813](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211211204449813.png)
+
+表格结构标签如下：
+
+1. `<thead></thead>`：用于定义表格的头部，`<thead>` 内部必须拥有 `<tr>` 标签， 一般是位于第一行
+2. `<tbody></tbody>`：用于定义表格的主体，主要用于放数据本体 
+3.  以上标签都是放在 `<table></table>` 标签中
+
+合并表格单元格的方式：
+
+1. 跨行合并：rowspan="合并单元格的个数"
+2. 跨列合并：colspan="合并单元格的个数"
+
+![image-20211211204943646](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211211204943646.png)
+
+### 4. 列表标签
+
+1. 无序列表：以项目符号呈现列表项
+
+   ```html
+   <ul>
+    <li>列表项1</li>
+    <li>列表项2</li>
+    <li>列表项3</li>
+    ...
+   </ul>
+   ```
+
+   - 无序列表的各个列表项之间没有顺序级别之分，是并列的
+   - `<ul></ul>` 中只能嵌套 `<li></li>`，直接在 `<ul></ul>` 标签中输入其他标签或者文字的做法是不被允许的
+   - `<li> 与 </li>` 之间相当于一个容器，可以容纳所有元素
+
+2. 有序列表：列表排序以数字来显示
+
+   ```html
+   <ol>
+    <li>列表项1</li>
+    <li>列表项2</li>
+    <li>列表项3</li>
+    ...
+   </ol>
+   ```
+
+   - `<ol></ol>`中只能嵌套`<li></li>`，直接在`<ol></ol>`标签中输入其他标签或者文字的做法是不被允许的
+   - `<li> 与 </li>`之间相当于一个容器，可以容纳所有元素
+
+3. 自定义列表：列表项前没有任何项目符号
+
+   ```html
+   <dl>
+    <dt>名词1</dt>
+    <dd>名词1解释1</dd>
+    <dd>名词1解释2</dd>
+   </dl>
+   ```
+
+   - ` <dl></dl>` 里面只能包含` <dt>` 和 `<dd>`
+   - `<dt> 和 <dd>`个数没有限制，经常是一个`<dt>` 对应多个`<dd>`
+
+### 5.表单标签
+
+**表单域 **是一个包含表单元素的区域。在 HTML 标签中， `<form>` 标签用于定义表单域，以实现用户信息的收集和传递，`<form>` 会把它范围内的表单元素信息提交给服务器
+
+```html
+<form action=“url地址” method=“提交方式” name=“表单域名称">
+ 各种表单元素控件
+</form>
+```
+
+常用属性：
+
+![image-20211211210838448](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211211210838448.png)
+
+表单控件：
+
+1. **input 输入表单元素**：用于收集用户信息
+
+   ```html
+   <input type="属性值" />
+   ```
+
+   根据不同的 type 属性值，输入字段拥有很多种形式，type 属性值如下：
+
+   ![image-20211211211217471](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211211211217471.png)
+
+   除 type 属性外，`<input>`标签还有其他很多属性，其常用属性如下：
+
+   ![image-20211211211404090](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211211211404090.png)
+
+   - name 和value 是每个表单元素都有的属性值,主要给后台人员使用
+   - name 表单元素的名字, 要求单选按钮和复选框要有相同的name值
+   - checked属性主要针对于单选按钮和复选框, 主要作用一打开页面,就要可以默认选中某个表单元素
+   - maxlength 是用户可以在表单元素输入的最大字符数, 一般较少使用
+
+   此外，还有 `<label>`标签用于绑定一个表单元素, 当点击`<label>` 标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上,用来增加用户体验
+
+   ```html
+   <label for="sex">男</label>
+   <input type="radio" name="sex" id="sex" />
+   ```
+
+2. **select 下拉表单元素**：定义下拉列表
+
+   ```html
+   <select>
+    <option>选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+    ...
+   </select>
+   ```
+
+   - `<select>` 中至少包含一对`<option>` 。
+   - 在`<option>`中定义 `selected ="selected"` 时，当前项即为默认选中项
+
+3. **textarea 文本域元素**：定义多行文本输入
+
+   ```html
+   <textarea rows="3" cols="20">
+    文本内容
+   </textarea>
+   ```
+
+   cols="每行中的字符数"，rows="显示的行数"
+
 
 
 ## 四、注释方式和特殊字符
 
 ### 1. 注释方式
+```html
+<!-- 注释语句 -->  
 
->  <!-- 注释语句 -->  
->
->  快捷方式： ctrl + /
+快捷方式： ctrl + /
+```
 
 ### 2.特殊字符
 
@@ -106,3 +254,14 @@ src 引入的相对路径和绝对路径要区分：
 
 重点记住：<span style="color:red">空格 、大于号、 小于号</span>
 
+
+
+## 五、查阅文档
+
+- W3C : http://www.w3school.com.cn/
+
+- MDN：[https://developer.mozilla.org/zh-CN/](https://developer.mozilla.org/zh-CN/)
+
+- 菜鸟教程：[https://www.runoob.com/html/html-tutorial.html](https://www.runoob.com/html/html-tutorial.html)
+
+  
