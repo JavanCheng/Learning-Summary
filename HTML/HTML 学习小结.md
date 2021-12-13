@@ -1,32 +1,28 @@
-# HTML 学习小结
+﻿# HTML 学习小结
 
 ## 一、基本概念
 
 ### 1. 网页
 
-<span style="color:red">网页是构成网站的基本元素</span>，它通常由图片、链接、文字、声音、视频等元素组成。通常我们看到的网页，常见以 .htm 或 .html 后缀结尾的文件，因此将其俗称为<span style="color:red"> HTML 文件</span>
+==网页是构成网站的基本元素==，它通常由图片、链接、文字、声音、视频等元素组成。通常我们看到的网页，常见以 .htm 或 .html 后缀结尾的文件，因此将其俗称为==HTML 文件==
 
 ### 2. HTML
-HTML 指的是<span style="color:red">超文本标记语言 (Hyper Text Markup Language) </span>，它是用来描述网页的一种语言
+HTML 指的是==超文本标记语言 (Hyper Text Markup Language)==，它是用来描述网页的一种语言
 HTML 不是一种编程语言，而是一种标记语言 (markup language)
 标记语言是一套标记标签 (markup tag)
-<span style="color:red">超文本有 2 层含义：</span>
+==超文本有 2 层含义：==
 
 1. 它可以加入图片、声音、动画、多媒体等内容（超越了文本限制 ）
 2. 它还可以从一个文件跳转到另一个文件，与世界各地主机的文件连接（超级链接文本 ）
 
 ### 3. Web结构的构成
-主要包括<span style="color:red">结构（Structure）、表现（Presentation）和行为（Behavior）</span>三个方面
+主要包括 <font color=#FF000 >结构(Structure)、表现(Presentation)和行为(Behavior)</font> 三个方面
 1. 结构：HTML
 
 2. 表现：CSS
 
 3. 行为：JavaScript
-
-  ![image-20211208203339089](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211208203339089.png)
-
-
-
+![](https://img-blog.csdnimg.cn/4b0a12da6bca4aabb616d3fced1c780f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
 ## 二、常用简单 HTML 标签
 | 标签名  | 定义 | 说明 |
 | :------- | ------------- | ------------- |
@@ -37,8 +33,8 @@ HTML 不是一种编程语言，而是一种标记语言 (markup language)
 | **`<h1> - <h6>`** | **标题** | 加了标题的文字会变粗，独占一行，并且依据重要性h1 - h6递减 |
 | **`<p></p>`** | **段落** | 将文档分割为若干段落，段落之间保有空隙，并且会跟随浏览器窗口大小自动换行 |
 | **`<br />`** | **换行** | 强制换行，是一个单标签，段落标签会插入一些垂直的间距，而换行标签不会 |
-| **`<strong></strong>`**或者`<b></b>` | **加粗** | 加粗字体，更推荐 strong |
-| **`<em></em>`**或者`<i></i>` | **倾斜** | 倾斜字体，更推荐 em |
+| `<strong></strong>`或者`<b></b>` | **加粗** | 加粗字体，更推荐 strong |
+| `<em></em>`或者`<i></i>` | **倾斜** | 倾斜字体，更推荐 em |
 | `<del></del>`或者`<s></s>` | 删除线 | 字体加上删除线，更推荐 del |
 | `<ins></ins>`或者`<u></u>` | 下划线 | 字体加上下划线，更推荐 ins |
 | **`<div></div>`** | **大盒子** | division，表示分割、分区，一行只能放一个 |
@@ -57,16 +53,12 @@ HTML 不是一种编程语言，而是一种标记语言 (markup language)
 src 是`<img>`标签的必须属性，它用于指定图像文件的路径和文件名
 
 图像标签的其他属性如下：
-
-![image-20211208211725561](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211208211725561.png)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/f46bcf00c6ba439a91c50609c26ebe10.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
 src 引入的相对路径和绝对路径要区分：
 
-**相对路径：**图片相对于 HTML 页面的位置
-
-![image-20211208211916430](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211208211916430.png)
-
-**绝对路径：**是指目录下的绝对位置，直接到达目标位置，通常是从盘符开始的路径
+**相对路径**：图片相对于 HTML 页面的位置
+![在这里插入图片描述](https://img-blog.csdnimg.cn/31ef28d52f4f4c3d83a93dd6620fa605.png)
+**绝对路径**：是指目录下的绝对位置，直接到达目标位置，通常是从盘符开始的路径
 
 例如：`D:\web\img\logo.gif ` 或完整的网络地址 `http://www.itcast.cn/images/logo.gif`
 
@@ -77,19 +69,16 @@ src 引入的相对路径和绝对路径要区分：
 ```
 
 两个属性作用如下：
-
-![image-20211208212445875](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211208212445875.png)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/b4769e5a8e3648dba47d9c52d440163e.png)
 链接分类：
-
 1. 外部链接: 例如 `< a href="http:// www.baidu.com "> 百度</a >`
 2. 内部链接:网站内部页面之间的相互链接. 直接链接内部页面名称即可，例如 `< a href="index.html"> 首页 </a >`
 3. 空链接: 如果当时没有确定链接目标时，**`< a href="#"> 首页 </a >`**
 4. 下载链接: 如果 href 里面地址是一个文件或者压缩包，会下载这个文件
 5. 网页元素链接: 在网页中的各种网页元素，如文本、图像、表格、音频、视频等都可以添加超链接
 6. 锚点链接: 点击链接,可以快速定位到页面中的某个位置
-   - 在链接文本的 href 属性中，设置属性值为<span style="color:red"> #名字 </span>的形式，如`<a href="#two"> 第2集 </a>`
-   - 找到目标位置标签，里面添加一个 id 属性 = 刚才的名字 ，如`<h3 id="two"> 第2集 </h3>`
+   * 在链接文本的 href 属性中，设置属性值为<font color=#FF000> #名字 </font>的形式，如`<a href="#two"> 第2集 </a>`
+   * 找到目标位置标签，里面添加一个 id 属性 = 刚才的名字 ，如`<h3 id="two"> 第2集 </h3>`
 
 ### 3. 表格标签
 ```html
@@ -109,9 +98,7 @@ src 引入的相对路径和绝对路径要区分：
 4. `<td> </td>` 用于定义表格中的单元格(table data 的缩写)，必须嵌套在`<tr></tr>`标签中
 
 表格属性（不常用）如下：
-
-![image-20211211204449813](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211211204449813.png)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/f42f98711c0b40afaea634557153533c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
 表格结构标签如下：
 
 1. `<thead></thead>`：用于定义表格的头部，`<thead>` 内部必须拥有 `<tr>` 标签， 一般是位于第一行
@@ -122,8 +109,8 @@ src 引入的相对路径和绝对路径要区分：
 
 1. 跨行合并：rowspan="合并单元格的个数"
 2. 跨列合并：colspan="合并单元格的个数"
+![在这里插入图片描述](https://img-blog.csdnimg.cn/7e2cd85311aa498994230d0d6f11f669.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
 
-![image-20211211204943646](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211211204943646.png)
 
 ### 4. 列表标签
 
@@ -171,7 +158,7 @@ src 引入的相对路径和绝对路径要区分：
 
 ### 5.表单标签
 
-**表单域 **是一个包含表单元素的区域。在 HTML 标签中， `<form>` 标签用于定义表单域，以实现用户信息的收集和传递，`<form>` 会把它范围内的表单元素信息提交给服务器
+**表单域**是一个包含表单元素的区域。在 HTML 标签中， `<form>` 标签用于定义表单域，以实现用户信息的收集和传递，`<form>` 会把它范围内的表单元素信息提交给服务器
 
 ```html
 <form action=“url地址” method=“提交方式” name=“表单域名称">
@@ -180,9 +167,7 @@ src 引入的相对路径和绝对路径要区分：
 ```
 
 常用属性：
-
-![image-20211211210838448](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211211210838448.png)
-
+![](https://img-blog.csdnimg.cn/84db39318003424b8016a6c9c912d74d.png)
 表单控件：
 
 1. **input 输入表单元素**：用于收集用户信息
@@ -192,19 +177,16 @@ src 引入的相对路径和绝对路径要区分：
    ```
 
    根据不同的 type 属性值，输入字段拥有很多种形式，type 属性值如下：
-
-   ![image-20211211211217471](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211211211217471.png)
-
+   ![](https://img-blog.csdnimg.cn/74dbc0b126b14131a804a13943af6251.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
    除 type 属性外，`<input>`标签还有其他很多属性，其常用属性如下：
-
-   ![image-20211211211404090](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211211211404090.png)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/7ee8c200017246c38fc6937349a8c7b9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
    - name 和value 是每个表单元素都有的属性值,主要给后台人员使用
    - name 表单元素的名字, 要求单选按钮和复选框要有相同的name值
    - checked属性主要针对于单选按钮和复选框, 主要作用一打开页面,就要可以默认选中某个表单元素
    - maxlength 是用户可以在表单元素输入的最大字符数, 一般较少使用
 
-   此外，还有 `<label>`标签用于绑定一个表单元素, 当点击`<label>` 标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上,用来增加用户体验
+  
+  此外，还有 `<label>`标签用于绑定一个表单元素, 当点击`<label>` 标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上,用来增加用户体验
 
    ```html
    <label for="sex">男</label>
@@ -249,19 +231,22 @@ src 引入的相对路径和绝对路径要区分：
 ### 2.特殊字符
 
 在 HTML 页面中，一些特殊的符号很难或者不方便直接使用，此时我们就可以使用下面的字符来替代
-
-![image-20211208213514300](C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211208213514300.png)
-
+![\[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-O8D5Vucw-1639229448891)(C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211208213514300.png)\]](https://img-blog.csdnimg.cn/d4b9c016ad8a44aeb647edc2ee8fb311.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
 重点记住：<span style="color:red">空格 、大于号、 小于号</span>
 
 
 
 ## 五、查阅文档
 
-- W3C : http://www.w3school.com.cn/
+- W3C : [http://www.w3school.com.cn/](http://www.w3school.com.cn/)
 
 - MDN：[https://developer.mozilla.org/zh-CN/](https://developer.mozilla.org/zh-CN/)
 
 - 菜鸟教程：[https://www.runoob.com/html/html-tutorial.html](https://www.runoob.com/html/html-tutorial.html)
+
+  
+
+
+
 
   
