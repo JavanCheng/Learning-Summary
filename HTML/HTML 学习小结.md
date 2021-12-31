@@ -4,13 +4,13 @@
 
 ### 1. 网页
 
-==网页是构成网站的基本元素==，它通常由图片、链接、文字、声音、视频等元素组成。通常我们看到的网页，常见以 .htm 或 .html 后缀结尾的文件，因此将其俗称为==HTML 文件==
+**网页是构成网站的基本元素**，它通常由图片、链接、文字、声音、视频等元素组成。通常我们看到的网页，常见以 .htm 或 .html 后缀结尾的文件，因此将其俗称为**HTML 文件**
 
 ### 2. HTML
-HTML 指的是==超文本标记语言 (Hyper Text Markup Language)==，它是用来描述网页的一种语言
+HTML 指的是**超文本标记语言 (Hyper Text Markup Language)**，它是用来描述网页的一种语言
 HTML 不是一种编程语言，而是一种标记语言 (markup language)
 标记语言是一套标记标签 (markup tag)
-==超文本有 2 层含义：==
+**超文本有 2 层含义：**
 
 1. 它可以加入图片、声音、动画、多媒体等内容（超越了文本限制 ）
 2. 它还可以从一个文件跳转到另一个文件，与世界各地主机的文件连接（超级链接文本 ）
@@ -179,13 +179,13 @@ src 引入的相对路径和绝对路径要区分：
    根据不同的 type 属性值，输入字段拥有很多种形式，type 属性值如下：
    ![](https://img-blog.csdnimg.cn/74dbc0b126b14131a804a13943af6251.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
    除 type 属性外，`<input>`标签还有其他很多属性，其常用属性如下：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7ee8c200017246c38fc6937349a8c7b9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
+   ![在这里插入图片描述](https://img-blog.csdnimg.cn/7ee8c200017246c38fc6937349a8c7b9.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
    - name 和value 是每个表单元素都有的属性值,主要给后台人员使用
    - name 表单元素的名字, 要求单选按钮和复选框要有相同的name值
    - checked属性主要针对于单选按钮和复选框, 主要作用一打开页面,就要可以默认选中某个表单元素
    - maxlength 是用户可以在表单元素输入的最大字符数, 一般较少使用
 
-  
+
   此外，还有 `<label>`标签用于绑定一个表单元素, 当点击`<label>` 标签内的文本时，浏览器就会自动将焦点(光标)转到或者选择对应的表单元素上,用来增加用户体验
 
    ```html
@@ -231,7 +231,7 @@ src 引入的相对路径和绝对路径要区分：
 ### 2.特殊字符
 
 在 HTML 页面中，一些特殊的符号很难或者不方便直接使用，此时我们就可以使用下面的字符来替代
-![\[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-O8D5Vucw-1639229448891)(C:\Users\程玉峰\AppData\Roaming\Typora\typora-user-images\image-20211208213514300.png)\]](https://img-blog.csdnimg.cn/d4b9c016ad8a44aeb647edc2ee8fb311.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
+![](https://img-blog.csdnimg.cn/d4b9c016ad8a44aeb647edc2ee8fb311.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAQVB5dGhvbkM=,size_20,color_FFFFFF,t_70,g_se,x_16)
 重点记住：<span style="color:red">空格 、大于号、 小于号</span>
 
 
@@ -249,4 +249,4 @@ src 引入的相对路径和绝对路径要区分：
 
 
 
-  
+
